@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoTrend</title>
+        <!-- FavIcon -->
+        <link rel="shortcut icon" href="./" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/ecologo.jpg" type="image/x-icon">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <!-- FONTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="Logo EcoTrend">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado"
+                    aria-controls="conteudoNavbarSuportado"
+                    aria-expanded="false"
+                    aria-label="Alterna navegação"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                HOMEPAGE
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                PRODUTOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Roupas e acessórios</a>
+                                <a class="dropdown-item" href="#">Produtos de beleza</a>
+                                <a class="dropdown-item" href="#">Itens para casa</a>
+                                <a class="dropdown-item" href="#">Tecnologia verde</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="products.html">Todos os produtos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi-cart-check-fill"></i>
+                                CARRINHO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- BANNERS -->
+        <main>
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+                data-interval="5000"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/Banner1.png" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/Banner2.png" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/Banner3.png" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <!-- CATEGORIAS -->
+            <div class="container-fluid">
+                <div class="categories">
+                    <h2>Explore nossas categorias</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./assets/img/clothes.jpg" class="card-img-top" alt="Roupas e acessórios">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roupas e acessórios</h5>
+                                    <p class="card-text">Conheça nossa linha de roupas e acessórios sustentáveis.</p>
+                                    <a href="#" class="btn btn-primary">Ver produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./assets/img/makeup.jpg" class="card-img-top" alt="Itens de beleza">
+                                <div class="card-body">
+                                    <h5 class="card-title">Itens para beleza</h5>
+                                    <p class="card-text">Conheça nossa linha de produtos de beleza ecológicos.</p>
+                                    <a href="#" class="btn btn-primary">Ver produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./assets/img/tecnology.jpg" class="card-img-top" alt="Tecnologia verde">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tecnologia verde</h5>
+                                    <p class="card-text">Conheça nossa linha de produtos tecnológicos sustentáveis.</p>
+                                    <a href="#" class="btn btn-primary">Ver produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./assets/img/beautyitems.jpg" class="card-img-top" alt="Itens para casa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Itens para casa</h5>
+                                    <p class="card-text">Conheça nossa linha de produtos para casa.</p>
+                                    <a href="#" class="btn btn-primary">Ver produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOBRE NÓS -->
+                        <div class="container-fluid">
+                            <div class="about">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="./assets/img/team.jpg" alt="Sobre a EcoTrend" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="about-text">
+                                            <h2>Sobre a EcoTrend</h2>
+                                            <p>A EcoTrend é uma loja sustentável que se preocupa com o meio ambiente e oferece produtos ecológicos para seus clientes. Nossos produtos são feitos com materiais reciclados e sustentáveis, contribuindo para a preservação do planeta.</p>
+                                            <p>Conheça nossos produtos e faça parte dessa mudança. Juntos, podemos fazer a diferença!</p>
+
+                                            <a href="#" class="btn btn-primary">Entre em contato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>Contato</h3>
+                                <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+                                <p><i class="bi-geo-alt-fill"></i> Rua da Reciclagem, 123 - São Paulo/SP</p>
+                                <p><i class="bi-telephone-fill"></i> (11) 1234-5678</p>
+                                <p><i class="bi-envelope-fill"></i>
+                                    <a href="mailto:" class="text-white"> ecotrend@gmail.com</a> 
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Redes sociais</h3>
+                                <p>Siga-nos nas redes sociais e fique por dentro das novidades.</p>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi-facebook"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi-instagram"></i>
+                                    Instagram
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi-twitter
+                                    "></i>
+                                    Twitter
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Newsletter</h3>
+                                <p>Assine nossa newsletter e receba novidades em primeira mão.</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Assinar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2021 EcoTrend. Todos os direitos reservados.</p>
+                    </div>
+                </footer>
+
+                <!-- JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qOdb3x4X2JpPt1L9UBPvFroWJppQSTOBfJKcD1FNbAAQksmAJrni6iWITF8ANPpB" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            </body>
+        </html>
