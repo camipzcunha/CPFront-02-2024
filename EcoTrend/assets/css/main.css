@@ -391,3 +391,105 @@ footer .btn.btn-primary{
         padding: 0.5rem;
     }
 }
+
+.container {
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+}
+/* Imagem do Produto */
+.product-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Título e Preço */
+.product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    color: #5c6e3a;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-primary.btn-lg.mb-3{
+	background-color: #5c6e3a;
+	border: none;
+	border-radius: 0;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.btn.btn-primary.btn-lg.mb-3:hover{
+	background-color: #3a4820;
+	border: none;
+}
+
+/* Descrição do Produto */
+.product-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Informações e Características */
+.product-info .list-group-item {
+    font-size: 0.9rem;
+}
+
+/* Avaliações */
+.reviews {
+    margin-top: 1rem;
+}
+
+.reviews .review {
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-price {
+        font-size: 1.4rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-img img {
+        height: 300px; /* Ajuste para telas menores */
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    .product-description {
+        font-size: 0.8rem;
+    }
+
+    .reviews .review {
+        font-size: 0.8rem;
+    }
+
+    .product-info .list-group-item {
+        font-size: 0.8rem;
+    }
+}
