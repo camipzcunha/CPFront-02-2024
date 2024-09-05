@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/ecologo.jpg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Logo EcoTrend">
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado"
+            aria-expanded="false"
+            aria-label="Alterna navegação"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        HOMEPAGE
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        PRODUTOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Roupas e acessórios</a>
+                        <a class="dropdown-item" href="#">Produtos de beleza</a>
+                        <a class="dropdown-item" href="#">Itens para casa</a>
+                        <a class="dropdown-item" href="#">Tecnologia verde</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="produtos.html">Todos os produtos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="bi-cart-check-fill"></i>
+                        CARRINHO
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    
+<div class="container mt-5" >
+    <div class="row">
+        <!-- Imagem do Produto -->
+        <div class="col-md-6">
+            <div class="product-img">
+                <img src="./assets/img/tecnologia1.jpg" class="img-fluid rounded" alt="Carregador solar portátil">
+            </div>
+        </div>
+
+        <!-- Detalhes do Produto -->
+        <div class="col-md-6">
+            <div class="product-details">
+                <h1 class="product-title">Carregador solar portátil</h1>
+                <p class="product-price">R$79.99</p>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    ultricies, nunc et tincidunt ultricies, nunc et tincidunt
+                    ultricies, nunc et tincidunt
+                </p>
+                <button class="btn btn-primary btn-lg mb-3">Adicionar ao Carrinho</button>
+                <div class="product-info">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Marca:</strong> EcoTech </li>
+                        <li class="list-group-item"><strong>Categoria:</strong> Tecnologia verde</li>
+                        <li class="list-group-item"><strong>Disponibilidade:</strong> Esgotado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Avaliações e Características -->
+    <div class="row mt-5">
+        <!-- Avaliações -->
+        <div class="col-md-6">
+            <h3>Avaliações do Produto</h3>
+            <div class="reviews">
+                <div class="review">
+                    <strong>Cliente 1</strong>
+                    <p>Ótimo produto! Muito satisfeito com a compra.</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <hr>
+                <div class="review">
+                    <strong>Cliente 2</strong>
+                    <p>A qualidade é boa, mas esperava mais do acabamento.</p>
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Características do Produto -->
+        <div class="col-md-6">
+            <h3>Características</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Dimensões: 20cm x 10cm x 5cm</li>
+                <li class="list-group-item">Peso: 0.4kg</li>
+                <li class="list-group-item">Material: Plástico, metal e componentes eletrônicos </li>
+                <li class="list-group-item">Garantia: 1 anos</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 sm-6">
+                <h3>Contato</h3>
+                <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+                <p><i class="bi-geo-alt-fill"></i> Rua da Reciclagem, 123 - São Paulo/SP</p>
+                <p><i class="bi-telephone-fill"></i> (11) 1234-5678</p>
+                <p><i class="bi-envelope-fill"></i>
+                    <a href="mailto:" class="text-white"> ecotrend@gmail.com</a> 
+                </p>
+            </div>
+            <div class="col-md-6 sm-6">
+                <h3>Redes sociais</h3>
+                <p>Siga-nos nas redes sociais e fique por dentro das novidades.</p>
+                <a href="#" class="btn btn-primary">
+                    <i class="bi-facebook"></i>
+                    Facebook
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="bi-instagram"></i>
+                    Instagram
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="bi-twitter
+                    "></i>
+                    Twitter
+                </a>
+            </div>
+    <div class="footer-bottom">
+        <p>&copy; 2021 EcoTrend. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<!-- JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qOdb3x4X2JpPt1L9UBPvFroWJppQSTOBfJKcD1FNbAAQksmAJrni6iWITF8ANPpB" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
