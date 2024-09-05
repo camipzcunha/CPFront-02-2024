@@ -64,7 +64,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <a class="nav-link" href="contato.html">CONTATO</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
@@ -77,244 +77,254 @@
             </nav>
         </header>
         <main>
-            <!-- PRODUTOS -->
-            <br>
-            <br>
-            <br>
-            <div class="title">
-                <h2> Todos os Produtos</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/roupa2.jfif" class="card-img-top" alt="Product Image">
-                            <div class="card-body">
-                                <h5 class="card-title">Vestido retalhos Jeans </h5>
-                                <p class="card-text">R$129.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
-                        </div>
+            <br><br>
+            <h1 class="title"> Todos os Produtos</h1>
+            <div id="conteudoPrincipal" class="container-fluid ">
+                <!-- FILTRO -->
+                <div class="filter-container">
+                    
+                    <h4>Filtrar por:</h4>
+                    
+                    <!-- Categoria -->
+                    <div class="form-check">
+                        <input type="checkbox" id="filtroAcessorios" value="acessorios" class="form-check-input">
+                        <label class="form-check-label" for="filtroAcessorios">
+                            Produtos e acessórios
+                        </label>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/roupa1.jfif" class="card-img-top" alt="Product Image">
-                            <div class="card-body">
-                                <h5 class="card-title">Corset feito de botões </h5>
-                                <p class="card-text">R$79.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="filtroBeleza" value="beleza" class="form-check-input" >
+                        <label class="form-check-label" for="filtroBeleza">
+                            Beleza
+                        </label>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/acess1.jpg" class="card-img-top" alt="Colar de jarina">
-                            <div class="card-body">
-                                <h5 class="card-title">Colar de jarina</h5>
-                                <p class="card-text">R$49.99</p>
-                                <a href="detalheColar.html" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="filtroCasa" value="casa" class="form-check-input" >
+                        <label class="form-check-label" for="filtroCasa">
+                            Casa
+                        </label>
                     </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="filtroTecnologia" value="tecnologia" class="form-check-input" >
+                        <label class="form-check-label" for="filtroTecnologia">
+                            Tecnologia
+                        </label>
+                    </div>
+                
+                    <!-- Faixa de Preço -->
+                    <div class="price-filter">
+                        <h5>Faixa de Preço</h5>
+                        <label for="min-price">De:</label>
+                        <input type="number" id="min-price" class="form-control" placeholder="R$ 0,00">
+                
+                        <label for="max-price">Até:</label>
+                        <input type="number" id="max-price" class="form-control" placeholder="R$ 1000,00">
+                    </div>
+                
+                    <!-- Botão de Pesquisa -->
+                    <button class="btn-search" onclick="filtrarProdutos()">Buscar</button>
+                </div>  
 
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/ecobag3.jpg" class="card-img-top" alt="Ecobag de algodão">
-                            <div class="card-body">
-                                <h5 class="card-title">Ecobag de algodão</h5>   
-                                <p class="card-text">R$19.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                <!-- PRODUTOS -->
+                <div class="row col-md-6 col-lg-9 col-sm-6 ">
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ecom-card card p-0 mx-2" dado-categoria="acessorios" dado-preco="129.99">
+                        <img src="./assets/img/roupa2.jfif" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido retalhos Jeans </h5>
+                            <p class="card-text">R$129.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco1.jpg" class="card-img-top" alt="Rímel Ecológico">
-                            <div class="card-body">
-                                <h5 class="card-title">Rímel Ecológico</h5>
-                                <p class="card-text">R$39.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ecom-card card p-0 mx-2" dado-categoria="acessorios" dado-preco="79.99">
+                        <img src="./assets/img/roupa1.jfif" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Corset feito de botões </h5>
+                            <p class="card-text">R$79.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco2.jpg" class="card-img-top" alt="Shampoo Sólido">
-                            <div class="card-body">
-                                <h5 class="card-title">Shampoo Sólido</h5>
-                                <p class="card-text">R$19.99</p>
-                                <a href="detalheShampoo.html" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="acessorios" dado-preco="49.99">     
+                        <img src="./assets/img/acess1.jpg" class="card-img-top" alt="Colar de jarina">
+                        <div class="card-body">
+                            <h5 class="card-title">Colar de jarina</h5>
+                            <p class="card-text">R$49.99</p>
+                            <a href="detalheColar.html" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco3.jpg" class="card-img-top" alt="Esmaltes veganos">
-                            <div class="card-body">
-                                <h5 class="card-title">Esmaltes veganos</h5>
-                                <p class="card-text">R$19.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="acessorios" dado-preco="19.99">
+                        <img src="./assets/img/ecobag3.jpg" class="card-img-top" alt="Ecobag de algodão">
+                        <div class="card-body">
+                            <h5 class="card-title">Ecobag de algodão</h5>   
+                            <p class="card-text">R$19.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco4.jpg" class="card-img-top" alt="Kit Hidratante labial">
-                            <div class="card-body">
-                                <h5 class="card-title">Kit Hidratante labial</h5>
-                                <p class="card-text">R$79.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="beleza" dado-preco="39.99">
+                        <img src="./assets/img/produtoeco1.jpg" class="card-img-top" alt="Rímel Ecológico">
+                        <div class="card-body">
+                            <h5 class="card-title">Rímel Ecológico</h5>
+                            <p class="card-text">R$39.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco5.jpg" class="card-img-top" alt="Pasta de dente em bastão">
-                            <div class="card-body">
-                                <h5 class="card-title">Pasta de dente em bastão</h5>
-                                <p class="card-text">R$39.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="beleza" dado-preco="19.99">
+                        
+                        <img src="./assets/img/produtoeco2.jpg" class="card-img-top" alt="Shampoo Sólido">
+                        <div class="card-body">
+                            <h5 class="card-title">Shampoo Sólido</h5>
+                            <p class="card-text">R$19.99</p>
+                            <a href="detalheShampoo.html" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoeco6.jpg" class="card-img-top" alt="Pasta de dente em pastilha">
-                            <div class="card-body">
-                                <h5 class="card-title">Pasta de dente em pastilha</h5>
-                                <p class="card-text">R$69.99</p>]
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="beleza" dado-preco="19.99">
+                    
+                        <img src="./assets/img/produtoeco3.jpg" class="card-img-top" alt="Esmaltes veganos">
+                        <div class="card-body">
+                            <h5 class="card-title">Esmaltes veganos</h5>
+                            <p class="card-text">R$19.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/produtoseco7.jpg" class="card-img-top" alt="Paleta de sombras veganas">
-                            <div class="card-body">
-                                <h5 class="card-title">Paleta de sombras veganas</h5>
-                                <p class="card-text">R$99.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="beleza" dado-preco="79.99">
+                        <img src="./assets/img/produtoeco4.jpg" class="card-img-top" alt="Kit Hidratante labial">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Hidratante labial</h5>
+                            <p class="card-text">R$79.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/ecocasa5.jpg" class="card-img-top" alt="Kit de talheres de madeira">
-                            <div class="card-body">
-                                <h5 class="card-title">Kit de talheres de madeira</h5>
-                                <p class="card-text">R$49.99</p>
-                                <a href="detalheTalheres.html" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="acessorios" dado-preco="39.99">
+                        
+                        <img src="./assets/img/produtoeco5.jpg" class="card-img-top" alt="Pasta de dente em bastão">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta de dente em bastão</h5>
+                            <p class="card-text">R$39.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/ecocasa1.jpg" class="card-img-top" alt="Kit de itens utilitários">
-                            <div class="card-body">
-                                <h5 class="card-title">Kit de casa itens utilitários</h5>
-                                <p class="card-text">R$199.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="acessorios" dado-preco="69.99">  
+                        <img src="./assets/img/produtoeco6.jpg" class="card-img-top" alt="Pasta de dente em pastilha">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta de dente em pastilha</h5>
+                            <p class="card-text">R$69.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/ecocasa3.jpg" class="card-img-top" alt="Kit de produtos de banho">
-                            <div class="card-body">
-                                <h5 class="card-title">Kit de banho</h5>
-                                <p class="card-text">R$99.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="beleza" dado-preco="99.99">
+                        <img src="./assets/img/produtoseco7.jpg" class="card-img-top" alt="Paleta de sombras veganas">
+                        <div class="card-body">
+                            <h5 class="card-title">Paleta de sombras veganas</h5>
+                            <p class="card-text">R$99.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/tecnologia1.jpg" class="card-img-top" alt="Carregador solar portátil">
-                            <div class="card-body">
-                                <h5 class="card-title">Carregador solar portátil</h5>
-                                <p class="card-text">R$79.99</p>
-                                <a href="detalheCarregador.html" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="casa" dado-preco="49.99">
+                        <img src="./assets/img/ecocasa5.jpg" class="card-img-top" alt="Kit de talheres de madeira">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit de talheres de madeira</h5>
+                            <p class="card-text">R$49.99</p>
+                            <a href="detalheTalheres.html" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4">
-                        <div class="card ecom-card">
-                            <img src="./assets/img/tecnologia2.jpg" class="card-img-top" alt="Fone de ouvido bluetooth">
-                            <div class="card-body">
-                                <h5 class="card-title">Fone de ouvido bluetooth</h5>
-                                <p class="card-text">R$99.99</p>
-                                <a href="#" class="btn btn-primary">Ver detalhes</a>
-                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
-                            </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="casa" dado-preco="199.99">
+                        <img src="./assets/img/ecocasa1.jpg" class="card-img-top" alt="Kit de itens utilitários">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit de casa itens utilitários</h5>
+                            <p class="card-text">R$199.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="casa" dado-preco="99.99" >
+                        <img src="./assets/img/ecocasa3.jpg" class="card-img-top" alt="Kit de produtos de banho">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit de banho</h5>
+                            <p class="card-text">R$99.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="tecnologia" dado-preco="79.99">
+                        <img src="./assets/img/tecnologia1.jpg" class="card-img-top" alt="Carregador solar portátil">
+                        <div class="card-body">
+                            <h5 class="card-title">Carregador solar portátil</h5>
+                            <p class="card-text">R$79.99</p>
+                            <a href="detalheCarregador.html" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-4 card ecom-card p-0 mx-2" dado-categoria="tecnologia" dado-preco="99.99">
+                        <img src="./assets/img/tecnologia2.jpg" class="card-img-top" alt="Fone de ouvido bluetooth">
+                        <div class="card-body">
+                            <h5 class="card-title">Fone de ouvido bluetooth</h5>
+                            <p class="card-text">R$99.99</p>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </main>
 
+        <!-- FOOTER -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3>Contato</h3>
+                        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+                        <p>
+                            <i class="bi-geo-alt-fill"></i> Rua da Reciclagem, 123 - São Paulo/SP
+                        </p>
+                        <p>
+                            <i class="bi-telephone-fill"></i> (11) 1234-5678
+                        </p>
+                        <p>
+                            <i class="bi-envelope-fill"></i>
+                            <a href="mailto:" class="text-white"> ecotrend@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Redes sociais</h3>
+                        <p>Siga-nos nas redes sociais e fique por dentro das novidades.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="bi-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="bi-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="bi-twitter
+                            "></i>
+                            Twitter
+                        </a>
+                    </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2021 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </footer>
 
-
-
-
-                        
-                    </main>
-                    <footer>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <h3>Contato</h3>
-                                    <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
-                                    <p>
-                                        <i class="bi-geo-alt-fill"></i> Rua da Reciclagem, 123 - São Paulo/SP
-                                    </p>
-                                    <p>
-                                        <i class="bi-telephone-fill"></i> (11) 1234-5678
-                                    </p>
-                                    <p>
-                                        <i class="bi-envelope-fill"></i>
-                                        <a href="mailto:" class="text-white"> ecotrend@gmail.com</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <h3>Redes sociais</h3>
-                                    <p>Siga-nos nas redes sociais e fique por dentro das novidades.</p>
-                                    <a href="#" class="btn btn-primary">
-                                        <i class="bi-facebook"></i>
-                                        Facebook
-                                    </a>
-                                    <a href="#" class="btn btn-primary">
-                                        <i class="bi-instagram"></i>
-                                        Instagram
-                                    </a>
-                                    <a href="#" class="btn btn-primary">
-                                        <i class="bi-twitter
-                                        "></i>
-                                        Twitter
-                                    </a>
-                                </div>
-                        
-                        <div class="footer-bottom">
-                            <p>&copy; 2021 EcoTrend. Todos os direitos reservados.</p>
-                        </div>
-                    </footer>
-                    <!-- JS -->
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qOdb3x4X2JpPt1L9UBPvFroWJppQSTOBfJKcD1FNbAAQksmAJrni6iWITF8ANPpB" crossorigin="anonymous"></script>
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-                </body>
-            </html>
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qOdb3x4X2JpPt1L9UBPvFroWJppQSTOBfJKcD1FNbAAQksmAJrni6iWITF8ANPpB" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./assets/script/filtro.js"></script>
+    </body>
+</html>

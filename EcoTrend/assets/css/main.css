@@ -14,7 +14,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-
+#conteudoPrincipal{ 
+	display: flex;
+	flex: row;
+	gap: 100px;
+}
 
 .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light{
     box-shadow: 4px 6px 10px rgba(8, 30, 31, 0.1);
@@ -308,6 +312,11 @@ footer .btn.btn-primary{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 8px;
+	/* margin: -10; */
+}
+
+.ecom-card.oculto{
+	display: none;
 }
 
 .ecom-card:hover {
@@ -528,4 +537,215 @@ footer .btn.btn-primary{
 
 .email {
     margin-top: 10px
+}
+
+
+
+
+/* FILTRO */
+
+
+.filter-container {
+    width: 250px; 
+    height: 63vh; 
+    background-color: #ffffff; 
+    border-right: 1px solid #ddd; 
+	border-radius: 5px;
+    padding: 20px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    overflow-y: auto; 
+    font-family: 'Roboto', sans-serif; 
+	margin-left: 10vh;
+}
+
+/* Barra de Pesquisa */
+.search-container {
+    margin-bottom: 20px; 
+}
+
+.search-input {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+
+.search-input:focus {
+    border-color: #3a4820; 
+    outline: none; 
+}
+
+/* Estilos do Filtro */
+.filter-container h4,
+.filter-container h5 {
+    font-weight: 600; 
+    color: #3a4820; 
+    margin-bottom: 15px; 
+}
+
+.filter-container .form-check {
+    margin-bottom: 15px; 
+    display: flex;
+    align-items: center;
+}
+
+.filter-container .form-check input[type="checkbox"] {
+    appearance: none; 
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%; 
+    border: 2px solid #3a4820; 
+    background-color: #fff; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    position: relative;
+}
+
+.filter-container .form-check input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: #3a4820; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+/* Faixa de Preço */
+.price-filter {
+    margin-bottom: 20px; 
+}
+
+.price-filter label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.price-filter input[type="number"] {
+    margin-bottom: 15px; 
+}
+
+.price-filter .form-control {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.price-filter #apply-price {
+    width: 100%;
+    background-color: #3a4820;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.price-filter #apply-price:hover {
+    background-color: #2a3a1a;
+}
+
+/* Botão de Pesquisa */
+.filter-container .btn-search {
+    background-color: #3a4820; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    width: 100%;
+}
+
+.filter-container .btn-search:hover {
+    background-color: #2d3b1d; 
+}
+
+/* Consultas de Mídia */
+
+/* Para telas de tablets e dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    .filter-container {
+        width: 100%; 
+        height: auto; 
+        position: static; 
+        border-right: none; 
+        box-shadow: none; 
+    }
+}
+
+/* Para telas de celulares e dispositivos com largura menor que 480px */
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .filter-container h4, .filter-container h5 {
+        font-size: 18px; 
+    }
+
+    .filter-container .form-check input[type="checkbox"] {
+        width: 12px; 
+        height: 12px; 
+    }
+
+    .filter-container .form-check input[type="checkbox"]:checked::before {
+        width: 6px; 
+        height: 6px; 
+    }
+
+    .price-filter .form-control {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .filter-container .btn-search {
+        padding: 8px 16px; 
+    }
+}
+
+.filter-container .btn-search {
+    background-color: #3a4820; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    width: 100%; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+
+.filter-container .btn-search:hover {
+    background-color: #2d3b1d; 
+}
+
+/* Consultas de Mídia para dispositivos móveis */
+
+/* Para telas de tablets e dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+	#conteudoPrincipal{ 
+		display: inline;
+	}
+	.filter-container {
+		margin: 5px;
+	}
+    .filter-container .btn-search {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+}
+
+/* Para telas de celulares e dispositivos com largura menor que 480px */
+@media (max-width: 480px) {
+	#conteudoPrincipal{ 
+		display: inline;
+	}
+    .filter-container .btn-search {
+        padding: 6px 12px; 
+        font-size: 12px; 
+    }
 }
