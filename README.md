@@ -4,6 +4,7 @@
 Neste checkpoint apresentamos um ecomerce feito pelos alunos Camila, Nicoli, Isabelle e Pedro contruindo este site utilizando a ultima ferramenta que aprendemos na aula de Front-end Design. O bootstrap que nos permitiu implementar funcionalidade ao site e responsividade
 ao mesmo de maneira mais facilitada.
 Em nosso site podemos identificar elementos comuns em sites de vendas como filtros, pagina de contato, uma pagina de produto e banner com os produtos mais procurador.
+Tambem foi incluido paginas com detalhes do produtos sendo elas: Carregador, Talheres de madeiras, Colar e Shampoo a seco.
 
 ## 🙎‍♂️🙎‍♀️ INTEGRANTES
 
