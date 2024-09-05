@@ -381,7 +381,7 @@ footer .btn.btn-primary{
     }
 
     .ecom-card img {
-        height: 150px; /* Ajustar altura da imagem para dispositivos móveis */
+        height: 200px; /* Ajustar altura da imagem para dispositivos móveis */
     }
 
     .ecom-card .card-title {
